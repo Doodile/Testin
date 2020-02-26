@@ -997,12 +997,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -113181020801827196, guid: 0a4ca0050f99ccf4bbb362425a3dddd8,
+    - target: {fileID: 4063835366044962077, guid: 0a4ca0050f99ccf4bbb362425a3dddd8,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ae4ce1be6ac4bb04e92759dbd77fd71d, type: 2}
-    - target: {fileID: 4063835366044962077, guid: 0a4ca0050f99ccf4bbb362425a3dddd8,
+    - target: {fileID: -113181020801827196, guid: 0a4ca0050f99ccf4bbb362425a3dddd8,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -14173,31 +14173,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sparks
       objectReference: {fileID: 0}
-    - target: {fileID: 841022825495593554, guid: e770a9e1492194646b0c6b70ae3cf59d,
-        type: 3}
-      propertyPath: LightsModule.enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 841022825495593554, guid: e770a9e1492194646b0c6b70ae3cf59d,
-        type: 3}
-      propertyPath: InitialModule.startLifetime.minScalar
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 841022825495593554, guid: e770a9e1492194646b0c6b70ae3cf59d,
-        type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 841022825495593554, guid: e770a9e1492194646b0c6b70ae3cf59d,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 841022825495593554, guid: e770a9e1492194646b0c6b70ae3cf59d,
-        type: 3}
-      propertyPath: CollisionModule.m_Dampen.scalar
-      value: 0.7
-      objectReference: {fileID: 0}
     - target: {fileID: 841022825495593553, guid: e770a9e1492194646b0c6b70ae3cf59d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14253,6 +14228,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 841022825495593554, guid: e770a9e1492194646b0c6b70ae3cf59d,
+        type: 3}
+      propertyPath: LightsModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 841022825495593554, guid: e770a9e1492194646b0c6b70ae3cf59d,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 841022825495593554, guid: e770a9e1492194646b0c6b70ae3cf59d,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 841022825495593554, guid: e770a9e1492194646b0c6b70ae3cf59d,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 841022825495593554, guid: e770a9e1492194646b0c6b70ae3cf59d,
+        type: 3}
+      propertyPath: CollisionModule.m_Dampen.scalar
+      value: 0.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e770a9e1492194646b0c6b70ae3cf59d, type: 3}
 --- !u!198 &841022825495593554 stripped
@@ -14272,6 +14272,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerFab
+      objectReference: {fileID: 0}
+    - target: {fileID: 4538020667325617650, guid: 1505abf0a27cbf74ca47b71c90d7f197,
+        type: 3}
+      propertyPath: field of view
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 4538020667325617650, guid: 1505abf0a27cbf74ca47b71c90d7f197,
+        type: 3}
+      propertyPath: near clip plane
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 4538020665792591565, guid: 1505abf0a27cbf74ca47b71c90d7f197,
         type: 3}
@@ -14333,16 +14343,6 @@ PrefabInstance:
       propertyPath: DEBUG_MODE
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4538020667325617650, guid: 1505abf0a27cbf74ca47b71c90d7f197,
-        type: 3}
-      propertyPath: field of view
-      value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538020667325617650, guid: 1505abf0a27cbf74ca47b71c90d7f197,
-        type: 3}
-      propertyPath: near clip plane
-      value: 0.2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1505abf0a27cbf74ca47b71c90d7f197, type: 3}
 --- !u!1001 &5529405561155443544
@@ -14356,26 +14356,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sparks (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 841022825495593554, guid: e770a9e1492194646b0c6b70ae3cf59d,
-        type: 3}
-      propertyPath: InitialModule.startLifetime.minScalar
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 841022825495593554, guid: e770a9e1492194646b0c6b70ae3cf59d,
-        type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 841022825495593554, guid: e770a9e1492194646b0c6b70ae3cf59d,
-        type: 3}
-      propertyPath: CollisionModule.m_Dampen.scalar
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 841022825495593554, guid: e770a9e1492194646b0c6b70ae3cf59d,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 841022825495593553, guid: e770a9e1492194646b0c6b70ae3cf59d,
         type: 3}
@@ -14430,6 +14410,26 @@ PrefabInstance:
     - target: {fileID: 841022825495593553, guid: e770a9e1492194646b0c6b70ae3cf59d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 841022825495593554, guid: e770a9e1492194646b0c6b70ae3cf59d,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 841022825495593554, guid: e770a9e1492194646b0c6b70ae3cf59d,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 841022825495593554, guid: e770a9e1492194646b0c6b70ae3cf59d,
+        type: 3}
+      propertyPath: CollisionModule.m_Dampen.scalar
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 841022825495593554, guid: e770a9e1492194646b0c6b70ae3cf59d,
+        type: 3}
+      propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
