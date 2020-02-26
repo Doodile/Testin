@@ -46,11 +46,13 @@ public class UIScript : MonoBehaviour
         Settings.SetActive(false);
         if (!Cursor.visible)
         {
+            GameObject.Find("PlayerFab").GetComponent<Playermovement_Nick>().SetCanMove(false);
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
         }
         else
         {
+            GameObject.Find("PlayerFab").GetComponent<Playermovement_Nick>().SetCanMove(true);
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
         }
@@ -140,7 +142,7 @@ public class UIScript : MonoBehaviour
         GameObject OB = Instantiate(PrefabSlot,InventorySlots.transform);
         OB.transform.GetChild(1).GetComponent<Text>().text = Interact.NumberOfItemInInventory(enumn).ToString();
         OB.name = enumn.ToString();
-        OB.transform.GetChild(0).GetComponent<MeshFilter>().mesh = Resources.Load(Notes.GetNote(CurrentNote).GetTitle()) as Mesh;
+        OB.transform.GetChild(0).GetComponent<MeshFilter>().mesh = Resources.Load<Mesh>(enumn.ToString());
     }
 
     public void NextNote()
