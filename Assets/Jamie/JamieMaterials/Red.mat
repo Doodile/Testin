@@ -72,9 +72,11 @@ Material:
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 32
+    - _StencilRefDistortionVec: 64
     - _StencilRefMV: 160
     - _StencilWriteMask: 3
     - _StencilWriteMaskDepth: 48
+    - _StencilWriteMaskDistortionVec: 64
     - _StencilWriteMaskMV: 176
     - _SurfaceType: 0
     - _TransparentSortPriority: 0

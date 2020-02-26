@@ -21,13 +21,15 @@ public class ToggleDoor : BaseInteract_Nick
             //Door is unlocked so open / close the door
             else
             {
-                OpenClose();
+                //OpenClose();
+                GetComponent<Door>().Interact();
             }
         }
         //Otherwise the door is not a lockable door so simply open / close the door
         else
         {
-            OpenClose();
+            GetComponent<Door>().Interact();
+            //OpenClose();
         }
 
     }

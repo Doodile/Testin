@@ -26,7 +26,7 @@ public class LockedDoor : MonoBehaviour
         {
             PlayerLockpicking = true;
             player.GetComponent<Playermovement_Nick>().SetCanMove(false);
-            lockpickingObject = Instantiate(LockpickingPrefab, Camera.main.transform);
+            lockpickingObject = Instantiate(LockpickingPrefab, player.transform.GetChild(0).transform);
             lockpickingObject.transform.localPosition = new Vector3(-0.339f, 0.23f, 0.028f);
             lockpickingObject.GetComponent<Lockpicking>().DoorReference(gameObject);
             lockpickingObject.GetComponent<Lockpicking>().Active = true;

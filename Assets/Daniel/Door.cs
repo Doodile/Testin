@@ -7,6 +7,8 @@ using UnityEngine;
 public class Door : BaseInteract_Nick
 {
     public bool IsOpening=false;
+    public float startY;
+    public float endY;
 
     public override void Interact()
     {
@@ -17,11 +19,11 @@ public class Door : BaseInteract_Nick
     {
         if (IsOpening)
         {
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(-89.98f, 85, 0), 1.5f * Time.deltaTime);
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(-89.98f, endY, 0), 1.5f * Time.deltaTime);
         }
         else
         {
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(-89.98f, 0, 0), 1.5f * Time.deltaTime);
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(-89.98f, startY, 0), 1.5f * Time.deltaTime);
         }
     }
 }

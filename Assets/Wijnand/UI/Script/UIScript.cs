@@ -25,7 +25,7 @@ public class UIScript : MonoBehaviour
     private void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
 
             ShowOrHideMenu();
@@ -44,18 +44,17 @@ public class UIScript : MonoBehaviour
         Inventory.SetActive(false);
         Notes_OB.SetActive(false);
         Settings.SetActive(false);
-        //Cursor.visible = !Cursor.visible;
-        if (Cursor.visible)
+        if (!Cursor.visible)
         {
-            Cursor.lockState = CursorLockMode.Confined;
-
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
         else
         {
+            Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
         }
     }
-
 
 
     public void ShowInventory()
@@ -180,6 +179,8 @@ public class UIScript : MonoBehaviour
         //Changes Text
         Notes_OB.transform.GetChild(1).GetComponent<Text>().text = Notes.GetNote(CurrentNote).Gettext();
 
+        //
+        Notes_OB.transform.GetChild(2).GetChild(0).GetComponent<MeshFilter>().mesh = Resources.Load(Notes.GetNote(CurrentNote).GetTitle()) as Mesh;
 
     }
 
