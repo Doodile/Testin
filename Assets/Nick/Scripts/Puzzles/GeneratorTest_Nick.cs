@@ -31,6 +31,7 @@ public class GeneratorTest_Nick : PuzzleBase_Nick
 
     public override void Interact()
     {
+        Debug.Log("Generator Interacted");
         if(!generatorOn)
         {
             if (currentFuel == RequiredFuel)

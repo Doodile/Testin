@@ -32,20 +32,29 @@ public class PlayerInteract_Nick : MonoBehaviour
         {
             Debug.Log("CAST");
 
-            BaseInteract_Nick interactToGet;
+            BaseInteract_Nick[] interactToGet;
             RaycastHit hit;
             ray = cameraBoi.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
             //Cast Ray
             if (Physics.Raycast(ray, out hit, InteractRange))
             {
                 //Set interact to hit result, if interact found
-                if(interactToGet = hit.collider.GetComponent<BaseInteract_Nick>())
+                interactToGet = hit.collider.GetComponents<BaseInteract_Nick>();
+                if(interactToGet.Length > 0)
                 {
-                    //Call interact on found object
-                    interactToGet.Interact();
+                    foreach (var item in interactToGet)
+                    {
+                        item.Interact();
+                    }
                 }
                 else
                     Debug.Log("No Interact Found :(");
+
+                //if(interactToGet = hit.collider.GetComponent<BaseInteract_Nick>())
+                //{
+                //    //Call interact on found object
+                //    interactToGet.Interact();
+                //}
             }
         }
     }
