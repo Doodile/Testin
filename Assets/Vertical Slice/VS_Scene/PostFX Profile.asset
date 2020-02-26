@@ -278,12 +278,12 @@ MonoBehaviour:
   m_AdvancedMode: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.425
+    m_Value: 0.568
     min: 0
     max: 1
   scatter:
     m_OverrideState: 1
-    m_Value: 0.418
+    m_Value: 0.694
     min: 0
     max: 1
   tint:
@@ -297,7 +297,7 @@ MonoBehaviour:
     m_Value: {fileID: 0}
   dirtIntensity:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.97
     min: 0
   highQualityFiltering:
     m_OverrideState: 1
