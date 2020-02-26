@@ -36,7 +36,8 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _BaseColorMap
-        texture: {instanceID: 0}
+        texture: {fileID: 7372765392024184320, guid: 470c335c704c49547bb652e26da86ee1,
+          type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _BentNormalMap
@@ -64,7 +65,8 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _HeightMap
-        texture: {instanceID: 0}
+        texture: {fileID: -5205959516591093293, guid: 470c335c704c49547bb652e26da86ee1,
+          type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _IridescenceMaskMap
@@ -76,7 +78,7 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _MainTex
-        texture: {fileID: 6908307961909040641, guid: 470c335c704c49547bb652e26da86ee1,
+        texture: {fileID: 7372765392024184320, guid: 470c335c704c49547bb652e26da86ee1,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
@@ -85,7 +87,8 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _NormalMap
-        texture: {instanceID: 0}
+        texture: {fileID: 2884399254305758371, guid: 470c335c704c49547bb652e26da86ee1,
+          type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _NormalMapOS
@@ -93,7 +96,8 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _SpecularColorMap
-        texture: {instanceID: 0}
+        texture: {fileID: 9060321154902927453, guid: 470c335c704c49547bb652e26da86ee1,
+          type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _SubsurfaceMaskMap
@@ -596,4 +600,7 @@ ScriptedImporter:
     material: {fileID: -5889523073336480683, guid: 470c335c704c49547bb652e26da86ee1,
       type: 3}
     generatedTextures:
-    - {fileID: 6908307961909040641, guid: 470c335c704c49547bb652e26da86ee1, type: 3}
+    - {fileID: 7372765392024184320, guid: 470c335c704c49547bb652e26da86ee1, type: 3}
+    - {fileID: 2884399254305758371, guid: 470c335c704c49547bb652e26da86ee1, type: 3}
+    - {fileID: 9060321154902927453, guid: 470c335c704c49547bb652e26da86ee1, type: 3}
+    - {fileID: -5205959516591093293, guid: 470c335c704c49547bb652e26da86ee1, type: 3}

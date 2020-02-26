@@ -30,7 +30,8 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _BaseColorMap
-        texture: {instanceID: 0}
+        texture: {fileID: 9140134021851348036, guid: ccd9aa5e44db59c4aa388c7bb57a9f9e,
+          type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _BentNormalMap
@@ -58,7 +59,8 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _HeightMap
-        texture: {instanceID: 0}
+        texture: {fileID: -1222325008415827249, guid: ccd9aa5e44db59c4aa388c7bb57a9f9e,
+          type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _IridescenceMaskMap
@@ -70,16 +72,18 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _MainTex
-        texture: {fileID: 3213960791983004982, guid: ccd9aa5e44db59c4aa388c7bb57a9f9e,
+        texture: {fileID: 9140134021851348036, guid: ccd9aa5e44db59c4aa388c7bb57a9f9e,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _MaskMap
-        texture: {instanceID: 0}
+        texture: {fileID: 6514571027147329340, guid: ccd9aa5e44db59c4aa388c7bb57a9f9e,
+          type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _NormalMap
-        texture: {instanceID: 0}
+        texture: {fileID: -143360730528151747, guid: ccd9aa5e44db59c4aa388c7bb57a9f9e,
+          type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _NormalMapOS
@@ -87,7 +91,8 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _SpecularColorMap
-        texture: {instanceID: 0}
+        texture: {fileID: -5016026912789224941, guid: ccd9aa5e44db59c4aa388c7bb57a9f9e,
+          type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _SubsurfaceMaskMap
@@ -630,4 +635,8 @@ ScriptedImporter:
     material: {fileID: -6807448272196602906, guid: ccd9aa5e44db59c4aa388c7bb57a9f9e,
       type: 3}
     generatedTextures:
-    - {fileID: 3213960791983004982, guid: ccd9aa5e44db59c4aa388c7bb57a9f9e, type: 3}
+    - {fileID: 9140134021851348036, guid: ccd9aa5e44db59c4aa388c7bb57a9f9e, type: 3}
+    - {fileID: -143360730528151747, guid: ccd9aa5e44db59c4aa388c7bb57a9f9e, type: 3}
+    - {fileID: -5016026912789224941, guid: ccd9aa5e44db59c4aa388c7bb57a9f9e, type: 3}
+    - {fileID: -1222325008415827249, guid: ccd9aa5e44db59c4aa388c7bb57a9f9e, type: 3}
+    - {fileID: 6514571027147329340, guid: ccd9aa5e44db59c4aa388c7bb57a9f9e, type: 3}

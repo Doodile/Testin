@@ -6,8 +6,19 @@ using UnityEngine;
 
 public class LightSwitch_Nick : BaseInteract_Nick
 {
-    public Light[] lights;
+    public GameObject[] lights;
     public bool Usable = true;
+
+    void Start()
+    {
+        if(!Usable)
+        {
+            foreach (var item in lights)
+            {
+                item.SetActive(false);
+            }
+        }
+    }
 
     override public void Interact()
     {
@@ -19,8 +30,8 @@ public class LightSwitch_Nick : BaseInteract_Nick
         Debug.Log("Lights Toggled");
         foreach (var item in lights)
         {
-            item.enabled = !item.enabled;
-            Debug.Log("Light is now " + item.enabled);
+            item.SetActive(!item.activeSelf);
+            Debug.Log("Light is now " + item.activeSelf);
         }
     }
 

@@ -21,7 +21,8 @@ ScriptedImporter:
     shaderName: HDRP/LitTessellation
     materialProperties:
       shader: {fileID: 4800000, guid: 756bac9090102564582875f4c7e30202, type: 3}
-      shaderKeywords: _BASECOLORMAP _HEIGHTMAP _MAINTEX _MASKMAP _NORMALMAP _SPECULARCOLORMAP
+      shaderKeywords: _BASECOLORMAP _HEIGHTMAP _MAINTEX _MASKMAP _NORMALMAP _NORMALMAP_TANGENT_SPACE
+        _SPECULARCOLORMAP
       lightmapFlags: 4
       texEnvs:
       - name: _AnisotropyMap
@@ -29,7 +30,8 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _BaseColorMap
-        texture: {instanceID: 0}
+        texture: {fileID: 6683964953874761670, guid: 7c71f224650554a4db46e05f28274b80,
+          type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _BentNormalMap
@@ -57,7 +59,8 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _HeightMap
-        texture: {instanceID: 0}
+        texture: {fileID: -5771907580313268961, guid: 7c71f224650554a4db46e05f28274b80,
+          type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _IridescenceMaskMap
@@ -69,16 +72,18 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _MainTex
-        texture: {fileID: -5956352633023539858, guid: 7c71f224650554a4db46e05f28274b80,
+        texture: {fileID: 6683964953874761670, guid: 7c71f224650554a4db46e05f28274b80,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _MaskMap
-        texture: {instanceID: 0}
+        texture: {fileID: 641315621312806605, guid: 7c71f224650554a4db46e05f28274b80,
+          type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _NormalMap
-        texture: {instanceID: 0}
+        texture: {fileID: 7777245134525046033, guid: 7c71f224650554a4db46e05f28274b80,
+          type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _NormalMapOS
@@ -86,7 +91,8 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _SpecularColorMap
-        texture: {instanceID: 0}
+        texture: {fileID: -6662271760327140901, guid: 7c71f224650554a4db46e05f28274b80,
+          type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _SubsurfaceMaskMap
@@ -629,4 +635,8 @@ ScriptedImporter:
     material: {fileID: -7763307280883705026, guid: 7c71f224650554a4db46e05f28274b80,
       type: 3}
     generatedTextures:
-    - {fileID: -5956352633023539858, guid: 7c71f224650554a4db46e05f28274b80, type: 3}
+    - {fileID: 6683964953874761670, guid: 7c71f224650554a4db46e05f28274b80, type: 3}
+    - {fileID: 7777245134525046033, guid: 7c71f224650554a4db46e05f28274b80, type: 3}
+    - {fileID: -6662271760327140901, guid: 7c71f224650554a4db46e05f28274b80, type: 3}
+    - {fileID: -5771907580313268961, guid: 7c71f224650554a4db46e05f28274b80, type: 3}
+    - {fileID: 641315621312806605, guid: 7c71f224650554a4db46e05f28274b80, type: 3}

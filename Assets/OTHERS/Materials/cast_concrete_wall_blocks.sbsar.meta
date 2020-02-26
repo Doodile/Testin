@@ -49,7 +49,8 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _BaseColorMap
-        texture: {instanceID: 0}
+        texture: {fileID: 1098095253186143213, guid: fbc4e210149584e458bcd297f49c19b3,
+          type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _BentNormalMap
@@ -77,7 +78,8 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _HeightMap
-        texture: {instanceID: 0}
+        texture: {fileID: 7090388444934885671, guid: fbc4e210149584e458bcd297f49c19b3,
+          type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _IridescenceMaskMap
@@ -89,7 +91,7 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _MainTex
-        texture: {fileID: -2756812264814062347, guid: fbc4e210149584e458bcd297f49c19b3,
+        texture: {fileID: 1098095253186143213, guid: fbc4e210149584e458bcd297f49c19b3,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
@@ -98,7 +100,8 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _NormalMap
-        texture: {instanceID: 0}
+        texture: {fileID: 4626403411278878834, guid: fbc4e210149584e458bcd297f49c19b3,
+          type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _NormalMapOS
@@ -106,7 +109,8 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _SpecularColorMap
-        texture: {instanceID: 0}
+        texture: {fileID: -7182179648604806207, guid: fbc4e210149584e458bcd297f49c19b3,
+          type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _SubsurfaceMaskMap
@@ -627,4 +631,7 @@ ScriptedImporter:
     material: {fileID: -5454075467190940129, guid: fbc4e210149584e458bcd297f49c19b3,
       type: 3}
     generatedTextures:
-    - {fileID: -2756812264814062347, guid: fbc4e210149584e458bcd297f49c19b3, type: 3}
+    - {fileID: 1098095253186143213, guid: fbc4e210149584e458bcd297f49c19b3, type: 3}
+    - {fileID: 4626403411278878834, guid: fbc4e210149584e458bcd297f49c19b3, type: 3}
+    - {fileID: -7182179648604806207, guid: fbc4e210149584e458bcd297f49c19b3, type: 3}
+    - {fileID: 7090388444934885671, guid: fbc4e210149584e458bcd297f49c19b3, type: 3}
