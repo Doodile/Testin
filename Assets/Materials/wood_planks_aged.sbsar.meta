@@ -80,7 +80,7 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _NormalMap
-        texture: {fileID: -3980351465605729210, guid: de49bb62a934b3745a6fc7808b52f1af,
+        texture: {fileID: -4407915791898257781, guid: de49bb62a934b3745a6fc7808b52f1af,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
