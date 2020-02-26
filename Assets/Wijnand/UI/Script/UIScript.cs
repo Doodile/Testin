@@ -140,7 +140,7 @@ public class UIScript : MonoBehaviour
         GameObject OB = Instantiate(PrefabSlot,InventorySlots.transform);
         OB.transform.GetChild(1).GetComponent<Text>().text = Interact.NumberOfItemInInventory(enumn).ToString();
         OB.name = enumn.ToString();
-
+        OB.transform.GetChild(0).GetComponent<MeshFilter>().mesh = Resources.Load(Notes.GetNote(CurrentNote).GetTitle()) as Mesh;
     }
 
     public void NextNote()
@@ -179,8 +179,8 @@ public class UIScript : MonoBehaviour
         //Changes Text
         Notes_OB.transform.GetChild(1).GetComponent<Text>().text = Notes.GetNote(CurrentNote).Gettext();
 
-        //
-        Notes_OB.transform.GetChild(2).GetChild(0).GetComponent<MeshFilter>().mesh = Resources.Load(Notes.GetNote(CurrentNote).GetTitle()) as Mesh;
+     
+        
 
     }
 
