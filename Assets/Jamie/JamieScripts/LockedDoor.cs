@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LockedDoor : MonoBehaviour
+public class LockedDoor : BaseInteract_Nick
 {
     internal bool Locked = true;
     public GameObject LockpickingPrefab;
@@ -14,11 +14,20 @@ public class LockedDoor : MonoBehaviour
 
     public float DistanceFromCamera = 4f;
 
+    private Door doorScript;
+
     private void Awake()
     {
         player = GameObject.Find("PlayerFab");
+        doorScript = GetComponent<Door>();
     }
 
+    public override void Interact()
+    {
+        if (!Locked)
+            return;
+        LockpickingStart();
+    }
 
     public void LockpickingStart()
     {
@@ -39,6 +48,7 @@ public class LockedDoor : MonoBehaviour
     {
         if (UnlockDoor)
         {
+            doorScript.LockPickDone();
             Locked = false;
         }
         PlayerLockpicking = false;

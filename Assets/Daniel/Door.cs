@@ -28,7 +28,7 @@ public class Door : BaseInteract_Nick
 
     public override void Interact()
     {
-        if (Locked)
+        if (!Locked)
         {
             IsOpening = !IsOpening;
         }
