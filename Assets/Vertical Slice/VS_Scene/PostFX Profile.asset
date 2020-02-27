@@ -194,7 +194,7 @@ MonoBehaviour:
     showEyeDropper: 1
   enableSunDisk:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
 --- !u!114 &-4084103736530307157
 MonoBehaviour:
   m_ObjectHideFlags: 3
