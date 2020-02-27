@@ -119,6 +119,7 @@ public class Lockpicking : MonoBehaviour
                 {
                     Debug.Log("door unlocked");
                     Active = false;
+                    door.GetComponent<Door>().LockPickDone();
                     door.GetComponent<LockedDoor>().LockpickingEnd(true);
                 }
 

@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//PROBS DONT NEED BUT KEEPING ATM JUST INCASE -------------------------------------------------------------------------------------------------------------------------
 public class ToggleDoor : BaseInteract_Nick
 {
     internal bool Open = false;
@@ -22,13 +24,13 @@ public class ToggleDoor : BaseInteract_Nick
             else
             {
                 //OpenClose();
-                GetComponent<Door>().Interact();
+                //GetComponent<Door>().Interact();
             }
         }
         //Otherwise the door is not a lockable door so simply open / close the door
         else
         {
-            GetComponent<Door>().Interact();
+            //GetComponent<Door>().Interact();
             //OpenClose();
         }
 
