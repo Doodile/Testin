@@ -2185,12 +2185,12 @@ PrefabInstance:
     - target: {fileID: 9095358861014460818, guid: 90579666971403b429dbb43b3c0e0631,
         type: 3}
       propertyPath: OpenRotation
-      value: 93
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 9095358861014460818, guid: 90579666971403b429dbb43b3c0e0631,
         type: 3}
       propertyPath: DoorOpenSpeed
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9095358860061565918, guid: 90579666971403b429dbb43b3c0e0631,
         type: 3}
@@ -2205,12 +2205,12 @@ PrefabInstance:
     - target: {fileID: 9095358860061565918, guid: 90579666971403b429dbb43b3c0e0631,
         type: 3}
       propertyPath: DoorOpenSpeed
-      value: -93
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9095358860061565918, guid: 90579666971403b429dbb43b3c0e0631,
         type: 3}
       propertyPath: OpenRotation
-      value: 1
+      value: -170
       objectReference: {fileID: 0}
     - target: {fileID: 9095358859604215221, guid: 90579666971403b429dbb43b3c0e0631,
         type: 3}
