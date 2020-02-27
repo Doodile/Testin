@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0032069392, g: 0.0048148497, b: 0.008752589, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -861,6 +861,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Switch
       objectReference: {fileID: 0}
+    - target: {fileID: 4939390436803485740, guid: 27f0b52c423a4544f99af0b1e2d8f102,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 27f0b52c423a4544f99af0b1e2d8f102,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -921,11 +926,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: dd14e3cd3b0fa1849bb55d0783db80b2, type: 2}
-    - target: {fileID: 4939390436803485740, guid: 27f0b52c423a4544f99af0b1e2d8f102,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27f0b52c423a4544f99af0b1e2d8f102, type: 3}
 --- !u!1 &354168399 stripped
@@ -2717,6 +2717,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: -90.00001
       objectReference: {fileID: 0}
+    - target: {fileID: 9095358860998824311, guid: 90579666971403b429dbb43b3c0e0631,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9095358860998824311, guid: 90579666971403b429dbb43b3c0e0631,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9095358860998824311, guid: 90579666971403b429dbb43b3c0e0631,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9095358860998824308, guid: 90579666971403b429dbb43b3c0e0631,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.r
+      value: 0.3915094
+      objectReference: {fileID: 0}
+    - target: {fileID: 9095358860998824308, guid: 90579666971403b429dbb43b3c0e0631,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9095358860998824308, guid: 90579666971403b429dbb43b3c0e0631,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.b
+      value: 0.9619519
+      objectReference: {fileID: 0}
+    - target: {fileID: 9095358861501859747, guid: 90579666971403b429dbb43b3c0e0631,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9095358861501859744, guid: 90579666971403b429dbb43b3c0e0631,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8d1756c51a0e0604b842f71f329e21bf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90579666971403b429dbb43b3c0e0631, type: 3}
 --- !u!1 &1078427081
