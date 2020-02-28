@@ -14,7 +14,7 @@ public class UIScript : MonoBehaviour
     public PlayerInteract_Nick Interact;
     public GameObject PrefabSlot;
     private int CurrentNote = 0;
-    public int unlockednotes = 1;
+    private int unlockednotes = 1;
     private void Start()
     {
         ShowOrHideMenu();
