@@ -99,7 +99,7 @@ MonoBehaviour:
     min: 0
   albedo:
     m_OverrideState: 1
-    m_Value: {r: 0, g: 0, b: 0, a: 1}
+    m_Value: {r: 0.3537736, g: 0.65285337, b: 1, a: 1}
     hdr: 0
     showAlpha: 1
     showEyeDropper: 1
@@ -391,10 +391,10 @@ MonoBehaviour:
     m_Value: 0
   exposure:
     m_OverrideState: 1
-    m_Value: -2.84
+    m_Value: -4.79
   multiplier:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.91
     min: 0
   upperHemisphereLuxValue:
     m_OverrideState: 1
@@ -412,7 +412,7 @@ MonoBehaviour:
     min: 0
   includeSunInBaking:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   sunSize:
     m_OverrideState: 1
     m_Value: 0.027
@@ -420,23 +420,23 @@ MonoBehaviour:
     max: 1
   sunSizeConvergence:
     m_OverrideState: 1
-    m_Value: 10
+    m_Value: 1
     min: 1
     max: 10
   atmosphereThickness:
     m_OverrideState: 1
-    m_Value: 0.43
+    m_Value: 0.7
     min: 0
     max: 5
   skyTint:
     m_OverrideState: 1
-    m_Value: {r: 0.9811321, g: 0.35635456, b: 0.39278355, a: 1}
+    m_Value: {r: 0.504717, g: 0.7886244, b: 1, a: 1}
     hdr: 0
     showAlpha: 1
     showEyeDropper: 1
   groundColor:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 0.9871898, b: 0.9858491, a: 1}
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
     hdr: 0
     showAlpha: 1
     showEyeDropper: 1
