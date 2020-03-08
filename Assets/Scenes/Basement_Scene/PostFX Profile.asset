@@ -12,19 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a6b00fcf518bb94a90b408492e07b44, type: 3}
   m_Name: FilmGrain
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   type:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 2
   intensity:
     m_OverrideState: 1
-    m_Value: 0.182
+    m_Value: 0.429
     min: 0
     max: 1
   response:
     m_OverrideState: 1
-    m_Value: 0.8
+    m_Value: 0.784
     min: 0
     max: 1
   texture:
@@ -42,7 +42,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f034cba68ab55e046ae1445a42f18c0e, type: 3}
   m_Name: IndirectLightingController
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   m_AdvancedMode: 0
   indirectSpecularIntensity:
     m_OverrideState: 1
@@ -50,7 +50,7 @@ MonoBehaviour:
     min: 0
   indirectDiffuseIntensity:
     m_OverrideState: 1
-    m_Value: 0.26
+    m_Value: 0
     min: 0
 --- !u!114 &-7420273631573666329
 MonoBehaviour:
@@ -216,6 +216,46 @@ MonoBehaviour:
     m_Value: -12
     min: -12
     max: -1
+--- !u!114 &-2223178047078109679
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384c4d03a551c44448145f4093304119, type: 3}
+  m_Name: ScreenSpaceReflection
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  depthBufferThickness:
+    m_OverrideState: 1
+    m_Value: 0.069
+    min: 0
+    max: 1
+  screenFadeDistance:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+    max: 1
+  minSmoothness:
+    m_OverrideState: 1
+    m_Value: 0.9
+    min: 0
+    max: 1
+  smoothnessFadeStart:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0
+    max: 1
+  reflectSky:
+    m_OverrideState: 1
+    m_Value: 1
+  rayMaxIterations:
+    m_OverrideState: 1
+    m_Value: 32
 --- !u!114 &-329549839618157358
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -281,7 +321,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   maxShadowDistance:
     m_OverrideState: 1
-    m_Value: 500
+    m_Value: 70
     min: 0
   cascadeShadowSplitCount:
     m_OverrideState: 1
@@ -336,6 +376,7 @@ MonoBehaviour:
   - {fileID: 2400297122050024215}
   - {fileID: 2876696465444360613}
   - {fileID: -7962205755765689585}
+  - {fileID: -2223178047078109679}
 --- !u!114 &2400297122050024215
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -348,23 +389,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0775cbb206825d541bf6c0297ee524ca, type: 3}
   m_Name: SplitToning
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   m_AdvancedMode: 0
   shadows:
     m_OverrideState: 1
-    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    m_Value: {r: 0.17132433, g: 0.17950329, b: 0.20754719, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1
   highlights:
     m_OverrideState: 1
-    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1
   balance:
     m_OverrideState: 1
-    m_Value: -89.1
+    m_Value: -4.2
     min: -100
     max: 100
 --- !u!114 &2876696465444360613
@@ -442,7 +483,7 @@ MonoBehaviour:
     showEyeDropper: 1
   enableSunDisk:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
 --- !u!114 &4630673310884059721
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -538,17 +579,17 @@ MonoBehaviour:
     m_Value: 2
   toeStrength:
     m_OverrideState: 1
-    m_Value: 0.285
+    m_Value: 0.6
     min: 0
     max: 1
   toeLength:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.608
     min: 0
     max: 1
   shoulderStrength:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.092
     min: 0
     max: 1
   shoulderLength:
@@ -557,7 +598,7 @@ MonoBehaviour:
     min: 0
   shoulderAngle:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.773
     min: 0
     max: 1
   gamma:
@@ -592,12 +633,12 @@ MonoBehaviour:
     m_Value: -1.82
   compensation:
     m_OverrideState: 1
-    m_Value: -1.37
+    m_Value: -0.95
   limitMin:
-    m_OverrideState: 0
-    m_Value: -7.14
+    m_OverrideState: 1
+    m_Value: -1.15
   limitMax:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 2.4
   curveMap:
     m_OverrideState: 1
@@ -627,12 +668,12 @@ MonoBehaviour:
       m_RotationOrder: 4
   adaptationMode:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   adaptationSpeedDarkToLight:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 4
     min: 0.001
   adaptationSpeedLightToDark:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 4
     min: 0.001
