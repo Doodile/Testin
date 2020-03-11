@@ -6,8 +6,8 @@ public class Notes : MonoBehaviour
 {
     public static readonly NotesClass first_Note = new NotesClass(
         m_title:"Name of the titleeeeee",
-        m_text:"TExt about the stufffff woooo",
-        m_lan:NotesClass.Language.EN
+        m_text:"TExt about the stufffff woooo"
+
         );
 
 
@@ -15,8 +15,8 @@ public class Notes : MonoBehaviour
 
     public static readonly NotesClass second_Note = new NotesClass(
        m_title: "Note 22222 testttt",
-       m_text: "randddommmmm stuffeeeeeeeeeedadasdwqdw",
-       m_lan: NotesClass.Language.EN
+       m_text: "randddommmmm stuffeeeeeeeeeedadasdwqdw"
+
        );
 
 
@@ -31,7 +31,7 @@ public class Notes : MonoBehaviour
     private void Start()
     {
         ListNotes = new List<NotesClass>();
-
+        ListNotes.Add(null);
         ListNotes.Add(first_Note);
         ListNotes.Add(second_Note);
       
@@ -39,6 +39,7 @@ public class Notes : MonoBehaviour
 
     public static NotesClass GetNote(int s)
     {
+        Debug.Log(s);
         return ListNotes[s];
     }
 

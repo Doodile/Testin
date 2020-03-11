@@ -10,22 +10,36 @@ public class UIScript : MonoBehaviour
     public GameObject Inventory;
     public GameObject Notes_OB;
     public GameObject Settings;
+    public GameObject ContinueOB;
     public GameObject InventorySlots;
     public PlayerInteract_Nick Interact;
     public GameObject PrefabSlot;
-    private int CurrentNote = 0;
-    private int unlockednotes = 1;
+    private int CurrentNote = 1;
+    private int unlockednotes = 2;
+    public bool HideOnStart = false;
+    public bool IsStartingGame = false;
     private void Start()
     {
-        ShowOrHideMenu();
+        //A way to fix a random error ¯\_(ツ)_/¯
+       // GetCurrentNote();
+
+        if (HideOnStart)
+        {
+            ShowOrHideMenu();
+        }
+        if (IsStartingGame)
+        {
+            ContinueOB.GetComponent<Text>().text = "Start Game";
+            GameObject.Find("PlayerFab").GetComponent<Playermovement_Nick>().SetCanMove(false);
+        }
     }
 
 
-    //Update has to be removed, and move the Key statement
+   //Change this to button IMPORTANT <----------------------------------- WM
     private void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.Tab) && !IsStartingGame)
         {
 
             ShowOrHideMenu();
@@ -38,7 +52,7 @@ public class UIScript : MonoBehaviour
 
     public void ShowOrHideMenu()
     {
-
+        ContinueOB.GetComponent<Text>().text = "Continue";
         GetComponent<Canvas>().enabled = !GetComponent<Canvas>().enabled;
         GetComponent<Animation>().Play();
         Inventory.SetActive(false);
@@ -58,9 +72,27 @@ public class UIScript : MonoBehaviour
         }
     }
 
+    //This was to implement the main menu makes it so i can ask if it's in the main menu or not
+    public void FuncContinue(){
+        if (IsStartingGame)
+        {
+            StartCoroutine(WaitForAnimation());
+            Camera.main.GetComponent<Animator>().SetBool("InMenu", false);
+            GameObject.Find("PlayerFab").GetComponent<Playermovement_Nick>().SetCanMove(false);
+            IsStartingGame = false;
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            GetComponent<Canvas>().enabled = !GetComponent<Canvas>().enabled;
+        }
+
+        else ShowOrHideMenu();
+    }
 
     public void ShowInventory()
     {
+        if (IsStartingGame)
+            return;
+
         Inventory.SetActive(true);
         Notes_OB.SetActive(false);
         Settings.SetActive(false);
@@ -69,6 +101,9 @@ public class UIScript : MonoBehaviour
 
     public void ShowNotes()
     {
+        if (IsStartingGame)
+            return;
+
         Inventory.SetActive(false);
         Notes_OB.SetActive(true);
         Settings.SetActive(false);
@@ -77,21 +112,24 @@ public class UIScript : MonoBehaviour
 
     public void ShowSettings()
     {
+        
+
         Inventory.SetActive(false);
         Notes_OB.SetActive(false);
         Settings.SetActive(true);
 
     }
 
-    //IGNORE--
-    //If Inventory has a count of 3 for loop 3 and name each child the inventory num 
 
-    //Go throw all slots and inventory at same time so first item picked is 1,2,3 etc
-    //When inventory doesn't have items it has no name so has no item
-    //--------
+    //Wait for animation to end make player able to play
+    IEnumerator WaitForAnimation()
+    {
 
+        yield return new WaitForSeconds(4.2f);
+        Camera.main.GetComponent<Animator>().SetBool("InMenu", true);
+        GameObject.Find("PlayerFab").GetComponent<Playermovement_Nick>().SetCanMove(true);
 
-
+    }
 
 
 
@@ -161,7 +199,7 @@ public class UIScript : MonoBehaviour
 
     public void PreviousNote()
     {
-        if(CurrentNote != 0)
+        if(CurrentNote != 1)
         {
             CurrentNote--;
             GetCurrentNote();
@@ -174,6 +212,7 @@ public class UIScript : MonoBehaviour
     //Gets current note depending on the CurrentNote int
     public void GetCurrentNote()
     {
+        
 
         //Changes title
         Notes_OB.transform.GetChild(0).GetComponent<Text>().text = Notes.GetNote(CurrentNote).GetTitle();
