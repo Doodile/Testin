@@ -18,6 +18,7 @@ public class UIScript : MonoBehaviour
     private int unlockednotes = 2;
     public bool HideOnStart = false;
     public bool IsStartingGame = false;
+    public GameObject SettingsOB;
     private void Start()
     {
         //A way to fix a random error ¯\_(ツ)_/¯
@@ -26,6 +27,7 @@ public class UIScript : MonoBehaviour
         if (HideOnStart)
         {
             ShowOrHideMenu();
+            Camera.main.GetComponent<Animator>().SetBool("InMenu", false);
         }
         if (IsStartingGame)
         {
@@ -58,6 +60,7 @@ public class UIScript : MonoBehaviour
         Inventory.SetActive(false);
         Notes_OB.SetActive(false);
         Settings.SetActive(false);
+        SettingsOB.SetActive(false);
         if (!Cursor.visible)
         {
             GameObject.Find("PlayerFab").GetComponent<Playermovement_Nick>().SetCanMove(false);
@@ -81,6 +84,7 @@ public class UIScript : MonoBehaviour
             GameObject.Find("PlayerFab").GetComponent<Playermovement_Nick>().SetCanMove(false);
             IsStartingGame = false;
             Cursor.visible = false;
+            SettingsOB.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;
             GetComponent<Canvas>().enabled = !GetComponent<Canvas>().enabled;
         }
@@ -112,8 +116,8 @@ public class UIScript : MonoBehaviour
 
     public void ShowSettings()
     {
-        
 
+        SettingsOB.SetActive(true);
         Inventory.SetActive(false);
         Notes_OB.SetActive(false);
         Settings.SetActive(true);

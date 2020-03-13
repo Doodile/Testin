@@ -17,14 +17,17 @@ ScriptedImporter:
     generateMipMaps: 1
     preset: " <sbspreset pkgurl=\"pkg://Old_Brick_Wall\" label=\"\" >\n  <presetinput
       identifier=\"$outputsize\" uid=\"1266522252\" type=\"8\" value=\"11,11\" />\n
-      \ <presetinput identifier=\"$randomseed\" uid=\"470781662\" type=\"4\" value=\"5019\"
+      \ <presetinput identifier=\"$randomseed\" uid=\"470781662\" type=\"4\" value=\"836\"
       />\n  <presetinput identifier=\"Mortar_level\" uid=\"1056917358\" type=\"0\"
-      value=\"0.565\" />\n </sbspreset>\n"
+      value=\"0.371\" />\n  <presetinput identifier=\"Bricks_amount_x\" uid=\"1056768741\"
+      type=\"4\" value=\"9\" />\n  <presetinput identifier=\"Bricks_amount_y\" uid=\"1056771209\"
+      type=\"4\" value=\"26\" />\n </sbspreset>\n"
     shaderName: HDRP/LitTessellation
     materialProperties:
       shader: {fileID: 4800000, guid: 756bac9090102564582875f4c7e30202, type: 3}
-      shaderKeywords: _BASECOLORMAP _DISPLACEMENT_LOCK_TILING_SCALE _HEIGHTMAP _NORMALMAP
-        _NORMALMAP_TANGENT_SPACE _TESSELLATION_DISPLACEMENT _TESSELLATION_PHONG _VERTEX_DISPLACEMENT_LOCK_OBJECT_SCALE
+      shaderKeywords: _BASECOLORMAP _DISPLACEMENT_LOCK_TILING_SCALE _HEIGHTMAP _MAPPING_TRIPLANAR
+        _NORMALMAP _NORMALMAP_TANGENT_SPACE _TESSELLATION_DISPLACEMENT _TESSELLATION_PHONG
+        _VERTEX_DISPLACEMENT_LOCK_OBJECT_SCALE
       lightmapFlags: 4
       texEnvs:
       - name: _AnisotropyMap
@@ -34,7 +37,7 @@ ScriptedImporter:
       - name: _BaseColorMap
         texture: {fileID: -1165933692201996976, guid: e726fbeda8bd0cc438a33cf2739177e4,
           type: 3}
-        scale: {x: 7, y: 2}
+        scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _BentNormalMap
         texture: {instanceID: 0}
@@ -249,7 +252,7 @@ ScriptedImporter:
       - name: _InitialBend
         float: 1
       - name: _InvTilingScale
-        float: 0.22222222
+        float: 2.5
       - name: _Ior
         float: 1
       - name: _IridescenceMask
@@ -287,7 +290,7 @@ ScriptedImporter:
       - name: _ShiverDrag
         float: 0.2
       - name: _Smoothness
-        float: 0.633
+        float: 0.355
       - name: _SmoothnessRemapMax
         float: 1
       - name: _SmoothnessRemapMin
@@ -341,7 +344,7 @@ ScriptedImporter:
       - name: _TessellationShapeFactor
         float: 0.75
       - name: _TexWorldScale
-        float: 1
+        float: 0.4
       - name: _TexWorldScaleEmissive
         float: 1
       - name: _Thickness
@@ -361,7 +364,7 @@ ScriptedImporter:
       - name: _TransparentWritingMotionVec
         float: 0
       - name: _UVBase
-        float: 0
+        float: 5
       - name: _UVDetail
         float: 0
       - name: _UVEmissive
@@ -408,7 +411,7 @@ ScriptedImporter:
       - name: _UVDetailsMappingMask
         color: {r: 1, g: 0, b: 0, a: 0}
       - name: _UVMappingMask
-        color: {r: 1, g: 0, b: 0, a: 0}
+        color: {r: 0, g: 0, b: 0, a: 0}
       - name: _UVMappingMaskEmissive
         color: {r: 1, g: 0, b: 0, a: 0}
     outputDescList:
@@ -560,5 +563,5 @@ ScriptedImporter:
       type: 3}
     generatedTextures:
     - {fileID: -1165933692201996976, guid: e726fbeda8bd0cc438a33cf2739177e4, type: 3}
-    - {fileID: -4716724083373156934, guid: e726fbeda8bd0cc438a33cf2739177e4, type: 3}
     - {fileID: 4465811124230585083, guid: e726fbeda8bd0cc438a33cf2739177e4, type: 3}
+    - {fileID: -4716724083373156934, guid: e726fbeda8bd0cc438a33cf2739177e4, type: 3}
