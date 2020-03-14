@@ -21,6 +21,8 @@ public class PuzzleBase_Nick : BaseInteract_Nick
 
     protected EPuzzleProgress puzzleProgress = EPuzzleProgress.NOT_STARTED;
 
+    protected MultiPartPuzzle_Nick attachedTo;
+
     //Called when interacted with. Override To add functionality
     override public void Interact()
     {
@@ -39,6 +41,14 @@ public class PuzzleBase_Nick : BaseInteract_Nick
         Debug.Log("Complete");
         LevelProgressData_Nick.AddProgress(ProgressToAdd);
         puzzleProgress = EPuzzleProgress.COMPLETED;
+        if(attachedTo)
+        {
+            attachedTo.SubPuzzleComplete();
+        }
+        else
+        {
+            Debug.Log("Not a sub puzzle.");
+        }
     }
 
     //Returns level progress from static data.
@@ -63,5 +73,12 @@ public class PuzzleBase_Nick : BaseInteract_Nick
     public bool CanUsePuzzle()
     {
         return (GetCurrentProgressInt() >= RequiredLevelProgressInt);
+    }
+
+    //Sets owner if attached to a multiPartPuzzle
+    public void SetOwner(MultiPartPuzzle_Nick newOwner)
+    {
+        Debug.Log("Owner set as " + newOwner);
+        attachedTo = newOwner;
     }
 }

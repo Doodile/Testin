@@ -2,9 +2,9 @@
 
 public enum EInventoryItems
 {
-    LIGHTER,
     CANDLE,
     PENCIL,
+    LIGHTER,
     KNIFE,
     SOCKS,
     GLOVES,

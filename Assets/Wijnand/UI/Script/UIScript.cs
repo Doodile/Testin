@@ -28,6 +28,8 @@ public class UIScript : MonoBehaviour
         {
             ShowOrHideMenu();
             Camera.main.GetComponent<Animator>().SetBool("InMenu", false);
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
         }
         if (IsStartingGame)
         {
@@ -96,7 +98,7 @@ public class UIScript : MonoBehaviour
     {
         if (IsStartingGame)
             return;
-
+        SettingsOB.SetActive(false);
         Inventory.SetActive(true);
         Notes_OB.SetActive(false);
         Settings.SetActive(false);
@@ -107,7 +109,7 @@ public class UIScript : MonoBehaviour
     {
         if (IsStartingGame)
             return;
-
+        SettingsOB.SetActive(false);
         Inventory.SetActive(false);
         Notes_OB.SetActive(true);
         Settings.SetActive(false);

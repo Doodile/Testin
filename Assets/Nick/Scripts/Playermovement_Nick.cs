@@ -39,8 +39,8 @@ public class Playermovement_Nick : MonoBehaviour
     void Start()
     {
         moveSpeed = walkSpeed;
-       // Cursor.visible = false;
-       // Cursor.lockState = CursorLockMode.Locked;
+        // Cursor.visible = false;
+        // Cursor.lockState = CursorLockMode.Locked;
     }
     //VV Get References VV
     void Awake()
@@ -103,9 +103,6 @@ public class Playermovement_Nick : MonoBehaviour
 
         rigidboi.velocity = rigidboi.velocity + (transform.forward * VerticalVelocity) * moveSpeed;
         rigidboi.velocity = rigidboi.velocity + (transform.right * HorizontalVelocity) * moveSpeed;
-
-        //Wijnand-- line to update the float MoveSpeed in the Animator
-        Camera.main.GetComponent<Animator>().SetFloat("MoveSpeed",Mathf.Abs(VerticalMove+HorizontalMove));
     }
 
     //Set can the player move or not.

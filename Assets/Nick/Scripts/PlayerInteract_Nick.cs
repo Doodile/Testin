@@ -12,6 +12,9 @@ public class PlayerInteract_Nick : MonoBehaviour
     //inventory array
     int[] Inventory = new int[(int)EInventoryItems.ITEMS_LENGTH];
 
+    //Key Array
+    List<int> KeysHeld = new List<int>();
+
     Ray ray;
 
     //Ray Distance
@@ -21,9 +24,7 @@ public class PlayerInteract_Nick : MonoBehaviour
     {
         //Get player camera
         cameraBoi = transform.GetChild(0).gameObject.GetComponent<Camera>();
-        AddToInventory(EInventoryItems.LIGHTER);
     }
-
 
 
     // Update is called once per frame
@@ -42,7 +43,7 @@ public class PlayerInteract_Nick : MonoBehaviour
             {
                 //Set interact to hit result, if interact found
                 interactToGet = hit.collider.GetComponents<BaseInteract_Nick>();
-                if(interactToGet.Length > 0)
+                if (interactToGet.Length > 0)
                 {
                     foreach (var item in interactToGet)
                     {
@@ -58,9 +59,25 @@ public class PlayerInteract_Nick : MonoBehaviour
                 //    interactToGet.Interact();
                 //}
             }
+
         }
+        {
+            //TOOLTIPS
+            RaycastHit hit;
+            ray = cameraBoi.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
+            //Cast Ray
+            if (Physics.Raycast(ray, out hit, InteractRange))
+            {
+                ToolTipSpawner_Nick toolTipToGet = hit.collider.GetComponent<ToolTipSpawner_Nick>();
+                if(toolTipToGet)
+                {
+                    toolTipToGet.LookAt();
+                }
+            }
+        }
+
     }
-    
+
     //Adds item to inventory, Overloadable to add multiple.
     internal void AddToInventory(EInventoryItems itemToAdd, int numberToAdd = 1)
     {
@@ -107,5 +124,26 @@ public class PlayerInteract_Nick : MonoBehaviour
     public int[] GetEntireInventory()
     {
         return Inventory;
+    }
+
+    //Test to see if player has key
+    public bool HasKey(int KeyNumber)
+    {
+        bool has = false;
+        foreach (var item in KeysHeld)
+        {
+            if(item == KeyNumber)
+            {
+                has = true;
+            }
+        }
+
+        return has;
+    }
+
+    //Adds a key to key list
+    public void AddKey(int KeyNumber)
+    {
+        KeysHeld.Add(KeyNumber);
     }
 }
