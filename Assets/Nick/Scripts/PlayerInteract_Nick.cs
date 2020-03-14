@@ -24,6 +24,7 @@ public class PlayerInteract_Nick : MonoBehaviour
     {
         //Get player camera
         cameraBoi = transform.GetChild(0).gameObject.GetComponent<Camera>();
+        AddToInventory(EInventoryItems.LIGHTER);
     }
 
 

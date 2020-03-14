@@ -103,6 +103,8 @@ public class Playermovement_Nick : MonoBehaviour
 
         rigidboi.velocity = rigidboi.velocity + (transform.forward * VerticalVelocity) * moveSpeed;
         rigidboi.velocity = rigidboi.velocity + (transform.right * HorizontalVelocity) * moveSpeed;
+
+        Camera.main.GetComponent<Animator>().SetFloat("MoveSpeed", Mathf.Abs(VerticalMove + HorizontalMove)); // WM added for head bobbing
     }
 
     //Set can the player move or not.
