@@ -42,7 +42,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f034cba68ab55e046ae1445a42f18c0e, type: 3}
   m_Name: IndirectLightingController
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   indirectSpecularIntensity:
     m_OverrideState: 1
@@ -138,15 +138,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4910d90e50201484ba448b791a192696, type: 3}
   m_Name: VolumetricLightingController
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   depthExtent:
     m_OverrideState: 1
-    m_Value: 47.7
+    m_Value: 4.66
     min: 0.1
   sliceDistributionUniformity:
     m_OverrideState: 1
-    m_Value: 0.868
+    m_Value: 0.547
     min: 0
     max: 1
 --- !u!114 &-4084103736530307157
@@ -272,12 +272,12 @@ MonoBehaviour:
   m_AdvancedMode: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.568
+    m_Value: 0.467
     min: 0
     max: 1
   scatter:
     m_OverrideState: 1
-    m_Value: 0.339
+    m_Value: 0.188
     min: 0
     max: 1
   tint:
@@ -548,7 +548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b51a78e223a2e504bb88a059b55229ea, type: 3}
   m_Name: WhiteBalance
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   temperature:
     m_OverrideState: 0

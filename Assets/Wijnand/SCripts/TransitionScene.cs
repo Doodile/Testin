@@ -33,7 +33,7 @@ public class TransitionScene : BaseInteract_Nick
         }
         else
         {
-
+            SceneManager.LoadScene(SceneToTransitionTo, LoadSceneMode.Single);
             //can enter
 
         }

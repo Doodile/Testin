@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf04afc05299e1a4ba45046ea98a463d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InteractRange: 5.5
+  InteractRange: 1.5
 --- !u!1 &4538020667325617655
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,7 +532,8 @@ Animation:
   m_Enabled: 1
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: d229fee6d1f9c5c4aa6bde6434132cea, type: 2}
-  m_Animations: []
+  m_Animations:
+  - {fileID: 7400000, guid: d229fee6d1f9c5c4aa6bde6434132cea, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
